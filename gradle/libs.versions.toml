@@ -1,0 +1,22 @@
+[versions]
+paper = "1.21.6"
+paper-api = "1.21.6-R0.1-SNAPSHOT"
+paperweight = "2.0.0-beta.17"
+aviara = "1.0.0"
+lombok = "1.18.30"
+lombok-plugin = "8.6"
+shadow = "8.1.1"
+kotlin = "1.9.22"
+autoservice = "1.1.1"
+
+[libraries]
+aviara-libs = { group = "cc.aviara", name = "aviara-libs", version.ref = "aviara" }
+auto-service-annotations = { group = "com.google.auto.service", name = "auto-service-annotations", version.ref = "autoservice" }
+auto-service = { group = "com.google.auto.service", name = "auto-service", version.ref = "autoservice" }
+
+[plugins]
+paperweight-userdev = { id = "io.papermc.paperweight.userdev", version.ref = "paperweight" }
+lombok = { id = "io.freefair.lombok", version.ref = "lombok-plugin" }
+shadow = { id = "com.github.johnrengelman.shadow", version.ref = "shadow" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
