@@ -1,4 +1,4 @@
-package city.soupbowl.dev.commands;
+package city.soupbowl.dev.admin.utils;
 
 import cc.aviara.api.command.CommandContext;
 import city.soupbowl.dev.utils.MiniMsg;

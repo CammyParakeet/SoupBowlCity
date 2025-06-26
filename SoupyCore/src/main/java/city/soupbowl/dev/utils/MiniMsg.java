@@ -1,7 +1,9 @@
 package city.soupbowl.dev.utils;
 
 import cc.aviara.annotations.dev.Todo;
+import lombok.Getter;
 import lombok.experimental.UtilityClass;
+import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.minimessage.MiniMessage;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -13,7 +15,12 @@ import org.bukkit.entity.Player;
 @UtilityClass
 public class MiniMsg {
 
+    @Getter
     private final MiniMessage miniMsg = MiniMessage.miniMessage();
+
+    public Component resolve(String raw) {
+        return miniMsg.deserialize(raw);
+    }
 
     /**
      * Sends a MiniMessage-formatted message to a player

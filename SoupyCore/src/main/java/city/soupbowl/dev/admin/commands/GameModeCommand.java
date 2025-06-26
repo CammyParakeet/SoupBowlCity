@@ -1,10 +1,11 @@
-package city.soupbowl.dev.commands;
+package city.soupbowl.dev.admin.commands;
 
 import cc.aviara.annotations.AviaraBean;
 import cc.aviara.api.command.AviaraCommand;
 import cc.aviara.api.command.CommandContext;
 import cc.aviara.core.commands.AbstractAviaraCommand;
 import cc.aviara.utils.bukkit.tab.TabUtils;
+import city.soupbowl.dev.admin.utils.GameModeUtil;
 import city.soupbowl.dev.utils.MiniMsg;
 import com.google.auto.service.AutoService;
 import org.bukkit.GameMode;
@@ -18,6 +19,7 @@ import java.util.stream.Stream;
 @AviaraCommand(
         name = "gamemode",
         aliases = {"mode", "gm"},
+        permission = "soupy.gamemode",
         usageMessage = "/gamemode <c|s|a|sp> [player]"
 )
 public class GameModeCommand extends AbstractAviaraCommand {

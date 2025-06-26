@@ -1,9 +1,10 @@
-package city.soupbowl.dev.commands;
+package city.soupbowl.dev.admin.commands;
 
 import cc.aviara.annotations.AviaraBean;
 import cc.aviara.api.command.AviaraCommand;
 import cc.aviara.api.command.CommandContext;
 import cc.aviara.core.commands.AbstractAviaraCommand;
+import city.soupbowl.dev.admin.utils.GameModeUtil;
 import com.google.auto.service.AutoService;
 import org.bukkit.GameMode;
 import org.jetbrains.annotations.NotNull;
@@ -11,7 +12,7 @@ import org.jetbrains.annotations.NotNull;
 public class SimpleModeCommands {
 
     @AutoService(AviaraBean.class)
-    @AviaraCommand(name = "gmc")
+    @AviaraCommand(name = "gmc", permission = "soupy.gamemode")
     static class GmcCommand extends AbstractAviaraCommand {
         protected GmcCommand() {
             super("gmc");
@@ -23,7 +24,7 @@ public class SimpleModeCommands {
     }
 
     @AutoService(AviaraBean.class)
-    @AviaraCommand(name = "gms")
+    @AviaraCommand(name = "gms", permission = "soupy.gamemode")
     static class GmsCommand extends AbstractAviaraCommand {
         protected GmsCommand() {
             super("gms");
@@ -35,7 +36,7 @@ public class SimpleModeCommands {
     }
 
     @AutoService(AviaraBean.class)
-    @AviaraCommand(name = "gma")
+    @AviaraCommand(name = "gma", permission = "soupy.gamemode")
     static class GmaCommand extends AbstractAviaraCommand {
         protected GmaCommand() {
             super("gma");
@@ -47,7 +48,7 @@ public class SimpleModeCommands {
     }
 
     @AutoService(AviaraBean.class)
-    @AviaraCommand(name = "gmsp")
+    @AviaraCommand(name = "gmsp", permission = "soupy.gamemode")
     static class GmspCommand extends AbstractAviaraCommand {
         protected GmspCommand() {
             super("gmsp");
