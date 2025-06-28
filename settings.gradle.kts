@@ -22,5 +22,4 @@ pluginManagement {
 }
 
 include("SoupyCore")
-
-
+include("SoupyGames")

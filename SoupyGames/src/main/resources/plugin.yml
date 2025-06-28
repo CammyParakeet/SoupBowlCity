@@ -1,0 +1,7 @@
+name: SoupyGames
+version: 1.0.0
+main: city.soupbowl.dev.games.SoupyGames
+api-version: 1.20
+
+depend:
+  - SoupyCore
